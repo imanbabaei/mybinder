@@ -4,7 +4,7 @@ runtime_config:
   python_version: 3
 entrypoint: voila --port=$PORT --no-browser --template vuetify-default --enable_nbextensions=True sysid_notebook.ipynb
 dependencies:
-  - python==3.8.10
+  - python
   - pip==21.0
   - pip: 
     - ipyvuetify
@@ -15,5 +15,5 @@ dependencies:
     - plotly
     - seeq
     - scipy
-    - voila
+    - voila==0.3.0
     - voila-vuetify
